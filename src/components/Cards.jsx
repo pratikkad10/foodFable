@@ -6,9 +6,8 @@ import RestaurantCard from "./RestaurantCard";
 import { MdAdd } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
-
 function Cards() {
-  const navigate= useNavigate();
+  const navigate = useNavigate();
   const { fetchData, loading, fetchedData } = useContext(AppContext);
 
   const [isOwner, setIsOwner] = useState(true);
@@ -41,7 +40,7 @@ function Cards() {
   }
 
   function addRestaurantHandler() {
-    navigate('/addRestaurant');
+    navigate("/addRestaurant");
   }
 
   return (
@@ -72,9 +71,10 @@ function Cards() {
         Featured Restaurants
       </p>
       {isOwner ? (
-        <button 
-        onClick={addRestaurantHandler}
-        className="bg-zinc-900 text-zinc-50 mt-4 px-4 py-1 mx-[7.6%] flex text-sm font-semibold items-center gap-1 rounded-md hover:bg-zinc-800 cursor-pointer">
+        <button
+          onClick={addRestaurantHandler}
+          className="bg-zinc-900 text-zinc-50 mt-4 px-4 py-1 mx-[7.6%] flex text-sm font-semibold items-center gap-1 rounded-md hover:bg-zinc-800 cursor-pointer"
+        >
           Add Restaurant <MdAdd size={20} />
         </button>
       ) : null}
