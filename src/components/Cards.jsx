@@ -90,15 +90,8 @@ function Cards() {
             <RestaurantCards />
             <RestaurantCards />
             <RestaurantCards />
-            <RestaurantCards />
-            <RestaurantCards />
-            <RestaurantCards />
-            <RestaurantCards />
-            <RestaurantCards />
-            <RestaurantCards />
-            <RestaurantCards />
-            <RestaurantCards />
-            <RestaurantCards />
+
+
           </div>
         )}
       </div>
